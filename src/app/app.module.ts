@@ -12,6 +12,7 @@ import { AppRoutingModule } from './/app-routing.module';
 import { HomeComponent } from './home/home.component';
 import { JokesListComponent } from './jokes-list/jokes-list.component';
 import { JokeComponent } from './joke/joke.component';
+import { JokesService } from './jokes.service';
 
 
 @NgModule({
@@ -30,7 +31,7 @@ import { JokeComponent } from './joke/joke.component';
     AppRoutingModule,
     InMemoryWebApiModule.forRoot(JokesWebApi, { dataEncapsulation: false })
   ],
-  providers: [],
+  providers: [JokesService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
