@@ -1,7 +1,7 @@
 import { Joke } from './joke';
 import { InMemoryDbService } from "angular-in-memory-web-api";
 
-export class JokesWebApi implements InMemoryDbService {
+export class JokesWebApiService implements InMemoryDbService {
     createDb() {
         const jokes: Joke[] = [
             {

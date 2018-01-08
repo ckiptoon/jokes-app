@@ -3,8 +3,9 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule } from "@angular/forms";
 import { HttpClientModule } from "@angular/common/http";
-import { InMemoryWebApiModule } from "angular-in-memory-web-api";
-import { JokesWebApi } from "./jokes-web-api";
+import { FlexLayoutModule } from "@angular/flex-layout";
+import { HttpClientInMemoryWebApiModule } from "angular-in-memory-web-api";
+import { JokesWebApiService } from "./jokes-web-api";
 
 import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
 import { AppComponent } from './app.component';
@@ -27,9 +28,10 @@ import { JokesService } from './jokes.service';
     FormsModule,
     HttpClientModule,
     BrowserAnimationsModule,
+    FlexLayoutModule,
     MaterialModule,
     AppRoutingModule,
-    InMemoryWebApiModule.forRoot(JokesWebApi, { dataEncapsulation: false })
+    HttpClientInMemoryWebApiModule.forRoot(JokesWebApiService, { dataEncapsulation: false })
   ],
   providers: [JokesService],
   bootstrap: [AppComponent]
