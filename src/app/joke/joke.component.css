@@ -1,8 +1,9 @@
 .example-card {
-  /* width: 300px; */
+  min-width: 270px;
   margin: 5px;
 }
 
 .example-card>mat-card-content {
-  min-height: 200px;
+  min-height: 100px;
+
 }

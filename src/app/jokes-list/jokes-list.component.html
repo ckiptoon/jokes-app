@@ -1,6 +1,10 @@
 <h2>Jokes</h2>
 <br>
 
-<div class="container" fxLayout fxLayout.lt-sm="column" fxLayoutWrap fxLayoutGap="10px" >
+<div fxLayout>
+  <button mat-raised-button color="primary" (click)="addNewDialog()" >New Joke</button>
+</div>
+<br>
+<div class="container" fxLayout fxLayout.lt-sm="column" fxLayoutWrap fxLayoutGap="10px">
   <app-joke fxFlex *ngFor="let joke of jokes" [joke]="joke"></app-joke>
 </div>

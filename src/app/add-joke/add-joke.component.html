@@ -1,0 +1,16 @@
+<h2 mat-dialog-title>
+  Add New Joke?
+</h2>
+<hr>
+<mat-dialog-content>
+  Some data: {{data.text}}
+  <br>
+  <h4>{{data.newJoke.id}}</h4>
+  <p>{{data.newJoke.setup}}</p>
+  <p>{{data.newJoke.punchline}}</p>
+</mat-dialog-content>
+<hr>
+<mat-dialog-actions>
+  <button mat-raised-button color="primary" (click)="OnCloseConfirm()">Save</button>
+  <button mat-raised-button color="accent" (click)="OnCloseCancel()">Cancel</button>
+</mat-dialog-actions>

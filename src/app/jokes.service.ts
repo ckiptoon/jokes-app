@@ -40,8 +40,8 @@ export class JokesService {
 
     return this.httpClient.put<Joke>(url, joke, httpOptions)
       .pipe(
-      tap(h => {
-        console.log('updated the joke: ', h);
+      tap(joke => {
+        console.log('updated the joke: ', joke);
       }),
       catchError(this.handleError<Joke>('updated successfully', null))
       )

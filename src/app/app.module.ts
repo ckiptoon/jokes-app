@@ -14,6 +14,7 @@ import { HomeComponent } from './home/home.component';
 import { JokesListComponent } from './jokes-list/jokes-list.component';
 import { JokeComponent } from './joke/joke.component';
 import { JokesService } from './jokes.service';
+import { AddJokeComponent } from './add-joke/add-joke.component';
 
 
 @NgModule({
@@ -21,7 +22,8 @@ import { JokesService } from './jokes.service';
     AppComponent,
     HomeComponent,
     JokesListComponent,
-    JokeComponent
+    JokeComponent,
+    AddJokeComponent
   ],
   imports: [
     BrowserModule,
@@ -33,6 +35,8 @@ import { JokesService } from './jokes.service';
     AppRoutingModule,
     HttpClientInMemoryWebApiModule.forRoot(JokesWebApiService, { dataEncapsulation: false })
   ],
+  entryComponents:[AddJokeComponent],
+  
   providers: [JokesService],
   bootstrap: [AppComponent]
 })

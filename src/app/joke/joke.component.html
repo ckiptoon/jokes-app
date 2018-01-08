@@ -1,16 +1,17 @@
 <div>
-  <mat-card class="example-card">
+  <mat-card class="example-card mat-elevation-z4">
     <mat-card-header>
       <mat-card-title>{{joke.setup}}</mat-card-title>
     </mat-card-header>
+    <hr>
     <mat-card-content>
       <p>
-        {{joke.punchline}}
+        Ans: {{joke.punchline}}
       </p>
     </mat-card-content>
     <mat-card-actions>
-      <button mat-button>Show</button>
-      <button mat-button>Hide</button>
+      <button mat-button color="primary">Edit</button>
+      <button mat-button color="warn">Delete</button>
     </mat-card-actions>
   </mat-card>
 </div>
