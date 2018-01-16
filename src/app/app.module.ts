@@ -15,6 +15,7 @@ import { JokesListComponent } from './jokes-list/jokes-list.component';
 import { JokeComponent } from './joke/joke.component';
 import { JokesService } from './jokes.service';
 import { AddJokeComponent } from './add-joke/add-joke.component';
+import { FavoriteComponent } from './favorite/favorite.component';
 
 
 @NgModule({
@@ -23,7 +24,8 @@ import { AddJokeComponent } from './add-joke/add-joke.component';
     HomeComponent,
     JokesListComponent,
     JokeComponent,
-    AddJokeComponent
+    AddJokeComponent,
+    FavoriteComponent
   ],
   imports: [
     BrowserModule,

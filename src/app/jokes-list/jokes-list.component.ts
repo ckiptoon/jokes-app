@@ -25,7 +25,7 @@ export class JokesListComponent implements OnInit {
     let newJoke = new Joke(0, 'New Joke Title', 'Punchline!');
 
     let dialogRef = this.dialog.open(AddJokeComponent, {
-      width: '400px',
+      width: '600px',
       data: { newJoke, text: 'Example Text CKK!' }
     })
 
